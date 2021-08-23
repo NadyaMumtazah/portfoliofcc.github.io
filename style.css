@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+#navbar {
+    height: 8vh;
+    background-color: rgb(223, 206, 206);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.nav-links {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#welcome-section {
+    background: linear-gradient(rgb(196, 134, 134), pink);
+    height: 100vh;
+    padding-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-section h1 {
+    font-size: 40px;
+}
+#about {
+    text-align: center;
+    height: 40vh;
+    padding-top: 50px;
+}
+.description {
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+}
+.header {
+    text-align: center;
+    padding-top: 70px;
+}
+#projects {
+    padding-bottom: 50px;
+}
+.projects-grid {
+    margin: 75px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.projects-grid img {
+    width: 400px;
+    height: 200px;
+}
+.project-title {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
